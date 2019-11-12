@@ -1,0 +1,13 @@
+IF OBJECT_ID('[dbo].[vwv_Table1]') IS NOT NULL
+	DROP VIEW [dbo].[vwv_Table1];
+
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+CREATE VIEW [dbo].[vwv_Table1]
+AS
+SELECT Col1 FROM Table1
+GO
